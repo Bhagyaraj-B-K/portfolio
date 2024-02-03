@@ -3,12 +3,7 @@
   background-color: black;
   height: 100%;
   width: 100%;
-}
-
-/* .Booklet {
-  text-align: center;
-} */
-
-.demoPage {
-  background-color: aliceblue;
+  display: flex;
+  justify-content : center;
+  align-items: center;
 }

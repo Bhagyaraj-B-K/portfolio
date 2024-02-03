@@ -1,21 +1,57 @@
 import HTMLFlipBook from "react-pageflip";
-import page1 from '/page1.jpg'
+import './Booklet.css';
+import Introduction from './Introduction';
+import Skills from "./Skills";
+import Experience from "./Experience";
 
-function Booklet () {
+const bookletProps = {
+  className: "magazine",
+  width: 420,
+  height: 594,
+  size: "fixed" as const,
+  style: {
+    boxShadow: '0 0 20px 0 rgba(0, 0, 0, 0.5)',
+    display: 'none',
+    backgroundSize: 'cover',
+  },
+  startPage: 0,
+  minWidth: 315,
+  maxWidth: 1000,
+  minHeight: 420,
+  maxHeight: 1350,
+  drawShadow: true,
+  flippingTime: 1000,
+  usePortrait: true,
+  startZIndex: 0,
+  autoSize: true,
+  maxShadowOpacity: 0.5,
+  showCover: false,
+  mobileScrollSupport: true,
+  clickEventForward: true,
+  useMouseEvents: true,
+  swipeDistance: 0,
+  showPageCorners: true,
+  disableFlipByClick: false,
+}
+
+const pages = [
+  Introduction,
+  Skills,
+  Experience,
+];
+
+function Booklet () {  
+  const MAX_BG_OPTIONS = 2;
   return (
-    <HTMLFlipBook width={300} height={500}>
-      <div className="demoPage">
-        <h1>Page1</h1>
-        <img src = {page1} style={{height: '70%'}}/>
-      </div>
-      <div className="demoPage" style={{background: `url('/page2.jpg')`, backgroundSize: 'cover'}}>Page2</div>
-      <div className="demoPage" style={{background: `url('/page3.jpg')`, backgroundSize: 'cover'}}>Page3</div>
-      <div className="demoPage" style={{background: `url('/page3.jpg')`, backgroundSize: 'cover'}}>Page4</div>
-      <div className="demoPage" style={{background: `url('/page3.jpg')`, backgroundSize: 'cover'}}>Page5</div>
-      <div className="demoPage" style={{background: `url('/page3.jpg')`, backgroundSize: 'cover'}}>Page6</div>
-      <div className="demoPage" style={{background: `url('/page3.jpg')`, backgroundSize: 'cover'}}>Page7</div>
-      <div className="demoPage" style={{background: `url('/page3.jpg')`, backgroundSize: 'cover'}}>Page8</div>
-    </HTMLFlipBook>
+    <div  id="booklet" style={{background: `url("/backgrounds/bg_${Math.round(Math.random() * MAX_BG_OPTIONS)}.jpg")`}}>
+      <HTMLFlipBook {...bookletProps}>
+        {pages.map((PageComponent, index) => (
+          <div className="bookletPages" key={index}>
+            <PageComponent />
+          </div>
+        ))}
+      </HTMLFlipBook>
+    </div>
   );
 }
 
