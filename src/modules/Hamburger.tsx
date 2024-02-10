@@ -2,6 +2,8 @@ import { useState } from "react";
 import { elastic as Menu } from "react-burger-menu";
 import "./Hamburger.css";
 import constants from "../constants";
+import Collapsible from "../components/Collapsible";
+import ListGroup from "../components/ListGroup";
 
 interface HamburgerProps {
   bg : number,
@@ -11,25 +13,31 @@ interface HamburgerProps {
 function Hamburger (props: HamburgerProps) {
   const [isOpen, setOpen] = useState(false);
 
-  const handleIsOpen = () => {
+  const toggleOpen = () => {
     setOpen(!isOpen);
   };
 
-  const closeSideBar = () => {
-    setOpen(false);
-  };
+  const bgOptions = [
+    {
+      name: 'BG 1',
+      className: `menu-item ${(props.bg == constants.BG_IMG.BG1) && 'active'}`,
+      onClick:()=>props.changeBg(constants.BG_IMG.BG1)
+    },
+    {
+      name: 'BG 2',
+      className: `menu-item ${(props.bg == constants.BG_IMG.BG2) && 'active'}`,
+      onClick:()=>props.changeBg(constants.BG_IMG.BG2)
+    },
+    {
+      name: 'BG 3',
+      className: `menu-item ${(props.bg == constants.BG_IMG.BG3) && 'active'}`,
+      onClick:()=>props.changeBg(constants.BG_IMG.BG3)
+    },
+  ];
 
   return (
-    <Menu right isOpen={isOpen} onOpen={handleIsOpen} onClose={handleIsOpen}>
-      <span className="menu-item" onClick={()=>props.changeBg(0)} style={(props.bg == constants.BG_IMG.BG1) ? {color: 'red'} : {}}>
-        BG 1
-      </span>
-      <span className="menu-item" onClick={()=>props.changeBg(1)} style={(props.bg == constants.BG_IMG.BG2) ? {color: 'red'} : {}}>
-        BG 2
-      </span>
-      <span className="menu-item" onClick={()=>props.changeBg(2)} style={(props.bg == constants.BG_IMG.BG3) ? {color: 'red'} : {}}>
-        BG 3
-      </span>
+    <Menu right isOpen={isOpen} onOpen={toggleOpen} onClose={toggleOpen}>
+      <Collapsible title="Background Themes" classNames="col-md-12" content={<ListGroup items={bgOptions}/>}/>
     </Menu>
   );
 };
