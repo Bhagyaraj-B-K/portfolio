@@ -3,6 +3,7 @@ import './Booklet.css';
 import Introduction from './Introduction';
 import Skills from "./Skills";
 import Experience from "./Experience";
+import constants from "../constants";
 
 const bookletProps = {
   className: "magazine",
@@ -40,10 +41,13 @@ const pages = [
   Experience,
 ];
 
-function Booklet () {  
-  const MAX_BG_OPTIONS = 2;
+interface BookletProps {
+  bg: number;
+}
+
+function Booklet (props: BookletProps) {  
   return (
-    <div  id="booklet" style={{background: `url("/backgrounds/bg_${Math.round(Math.random() * MAX_BG_OPTIONS)}.jpg")`}}>
+    <div  id="booklet" style={{background: `url("/backgrounds/${constants.BG_IMG.IMG_FILE(props.bg)}")`}}>
       <HTMLFlipBook {...bookletProps}>
         {pages.map((PageComponent, index) => (
           <div className="bookletPages" key={index}>
