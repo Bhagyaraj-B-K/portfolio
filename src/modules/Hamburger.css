@@ -41,7 +41,7 @@
 .bm-menu {
   background: #373a47;
   padding: 2.5em 1.5em 0;
-  font-size: 1.15em;
+  overflow: hidden !important;
 }
 
 .bm-morph-shape {
@@ -50,8 +50,48 @@
 
 .bm-item-list {
   color: #b8b7ad;
+  width: 100% !important;
+  left: -125px !important;
+  margin-top: 10px;
+}
+
+.bm-item-list > * {
+  margin-bottom: 7px;
 }
 
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
+}
+
+.menu-item {
+  font-size: small;
+}
+
+.collapsible {
+  border: 0.5px outset #bdbdbd; 
+  padding: 10px;
+  transition: border-radius 0.5s ease;
+}
+
+.collapsible.expanded {
+  border-radius: 5%;
+}
+
+.collapsible.expanded .header{
+  padding-bottom: 10px;
+  transition: padding-bottom 0.5s ease;
+}
+
+.collapsible.collapsed {
+  border-radius: 2.5%;
+}
+
+.collapsible.collapsed .header{
+  padding-bottom: 0px;
+  transition: padding-bottom 0.5s ease;
+}
+
+.list-group .active {
+  background-color: #1d1e23 !important;
+  border-color: inherit !important;
 }
