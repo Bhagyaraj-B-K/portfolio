@@ -4,17 +4,13 @@ import Introduction from './Introduction';
 import Skills from "./Skills";
 import Experience from "./Experience";
 import constants from "../constants";
+import { useState } from "react";
 
 const bookletProps = {
   className: "magazine",
   width: 420,
   height: 594,
   size: "fixed" as const,
-  style: {
-    boxShadow: '0 0 20px 0 rgba(0, 0, 0, 0.5)',
-    display: 'none',
-    backgroundSize: 'cover',
-  },
   startPage: 0,
   minWidth: 315,
   maxWidth: 1000,
@@ -26,7 +22,7 @@ const bookletProps = {
   startZIndex: 0,
   autoSize: true,
   maxShadowOpacity: 0.5,
-  showCover: false,
+  showCover: true,
   mobileScrollSupport: true,
   clickEventForward: true,
   useMouseEvents: true,
@@ -46,9 +42,23 @@ interface BookletProps {
 }
 
 function Booklet (props: BookletProps) {  
+  const [flipbookStyle, setFlipbookStyle] = useState({
+    boxShadow: '0 0 20px 0 rgba(0, 0, 0, 0)',
+    transition: 'box-shadow 0.7s ease-in-out',
+    display: 'none',
+    backgroundSize: 'cover',
+  });
   return (
     <div  id="booklet" style={{background: `url("/backgrounds/${constants.BG_IMG.IMG_FILE(props.bg)}")`}}>
-      <HTMLFlipBook {...bookletProps}>
+      <HTMLFlipBook {...bookletProps} style={flipbookStyle}
+      onFlip={(e)=>{
+        setFlipbookStyle({
+          ...flipbookStyle,
+          boxShadow: (e.data > 1 && e.data < (pages.length - 3)) 
+          ? '0 0 20px 0 rgba(0, 0, 0, 0.5)' 
+          : '0 0 20px 0 rgba(0, 0, 0, 0)',
+        })
+      }}>
         {pages.map((PageComponent, index) => (
           <div className="bookletPages" key={index}>
             <PageComponent />
