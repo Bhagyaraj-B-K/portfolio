@@ -1,0 +1,4 @@
+.magazine-cover {
+  background: url('/profile/magazineCover.jpg');
+  background-size: cover;
+}

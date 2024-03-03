@@ -1,3 +1,5 @@
+import BIO from './bio'
+
 const constants: any = {
     STATUS: {
       ACTIVE: 1,
@@ -12,3 +14,4 @@ const constants: any = {
 }
 
 export default constants;
+export const bio = BIO;
