@@ -11,7 +11,7 @@ function Introduction() {
             <h1 className='font-weight-bold' style={{ color: '#D39B44', fontSize: '70px', paddingTop: '5px'}}>PORTFOLIO</h1>
           </div>
           <div className="row">
-            <div className='col-md-6' style={{textAlign: 'left'}}>
+            <div className='split-col' style={{textAlign: 'left'}}>
               <p style={{color: '#D39B44', fontSize: '18px', marginTop: '150px', fontStyle: 'bold'}}>
                 Transforming <br /> 
                 Ideas into Reality
@@ -24,7 +24,7 @@ function Introduction() {
               <h5 style={{color: 'whitesmoke', margin: '50px 0 0 10px'}}>Since {bio.user.dob.getFullYear()}</h5>
               <img src={linkedInQR} alt="" width={'100px'} height={'100px'} style={{margin: '10px 0 0 10px'}} />
             </div>
-            <div className='col-md-6' style={{textAlign: 'right'}}>
+            <div className='split-col' style={{textAlign: 'right'}}>
               <p style={{color: 'whitesmoke', fontSize: '18px', paddingTop: '40px', fontStyle: 'bold'}}>
                 Transforming <br /> 
                 Ideas <br /> 
