@@ -1,6 +1,19 @@
 import BIO from './bio'
 
-const constants: any = {
+interface Constants {
+  STATUS: {
+    ACTIVE: number;
+    INACTIVE: number;
+  };
+  BG_IMG: {
+    BG1: number;
+    BG2: number;
+    BG3: number;
+    IMG_FILE: (img: number) => string;
+  };
+}
+
+const constants: Constants = {
     STATUS: {
       ACTIVE: 1,
       INACTIVE: 2,

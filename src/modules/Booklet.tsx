@@ -1,15 +1,15 @@
-import HTMLFlipBook from "react-pageflip";
-import './Booklet.css';
-import Introduction from './Introduction';
-import Skills from "./Skills";
-import Experience from "./Experience";
-import constants from "../constants";
+import HTMLFlipBook from 'react-pageflip'
+import './Booklet.css'
+import Introduction from './Introduction'
+import Skills from './Skills'
+import Experience from './Experience'
+import constants from '../constants'
 
 const bookletProps = {
-  className: "magazine",
+  className: 'magazine',
   width: 420,
   height: 594,
-  size: "fixed" as const,
+  size: 'fixed' as const,
   style: {},
   startPage: 0,
   minWidth: 315,
@@ -28,31 +28,27 @@ const bookletProps = {
   useMouseEvents: true,
   swipeDistance: 0,
   showPageCorners: true,
-  disableFlipByClick: false,
+  disableFlipByClick: false
 }
 
-const pages = [
-  Introduction,
-  Skills,
-  Experience,
-];
+const pages = [Introduction, Skills, Experience]
 
 interface BookletProps {
-  bg: number;
+  bg: number
 }
 
-function Booklet (props: BookletProps) {
+function Booklet(props: BookletProps) {
   return (
-    <div  id="booklet" style={{background: `url("/backgrounds/${constants.BG_IMG.IMG_FILE(props.bg)}")`}}>
+    <div id='booklet' style={{ background: `url("/backgrounds/${constants.BG_IMG.IMG_FILE(props.bg)}")` }}>
       <HTMLFlipBook {...bookletProps}>
         {pages.map((PageComponent, index) => (
-          <div className="bookletPages" key={index}>
+          <div className='bookletPages' key={index}>
             <PageComponent />
           </div>
         ))}
       </HTMLFlipBook>
     </div>
-  );
+  )
 }
 
 export default Booklet
