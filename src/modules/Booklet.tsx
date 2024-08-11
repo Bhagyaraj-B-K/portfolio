@@ -4,6 +4,10 @@ import Introduction from './Introduction'
 import Skills from './Skills'
 import Experience from './Experience'
 import constants from '../constants'
+import Contents from './Contents'
+import React from 'react'
+
+const Blank = () => <></>
 
 const bookletProps = {
   className: 'magazine',
@@ -31,20 +35,36 @@ const bookletProps = {
   disableFlipByClick: false
 }
 
-const pages = [Introduction, Skills, Experience]
+const pages = [Introduction, Blank, Contents, Skills, Experience]
 
 interface BookletProps {
   bg: number
 }
+
+const Page = React.forwardRef(
+  (
+    props: {
+      children: React.ReactNode
+      number: number
+    },
+    ref: React.Ref<HTMLDivElement>
+  ) => {
+    return (
+      <div className='bookletPages' ref={ref}>
+        {props.children}
+      </div>
+    )
+  }
+)
 
 function Booklet(props: BookletProps) {
   return (
     <div id='booklet' style={{ background: `url("/backgrounds/${constants.BG_IMG.IMG_FILE(props.bg)}")` }}>
       <HTMLFlipBook {...bookletProps}>
         {pages.map((PageComponent, index) => (
-          <div className='bookletPages' key={index}>
+          <Page number={index + 1} key={index+1}>
             <PageComponent />
-          </div>
+          </Page>
         ))}
       </HTMLFlipBook>
     </div>

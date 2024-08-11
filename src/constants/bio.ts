@@ -22,7 +22,6 @@ export default {
   },
   get getTotalExperience () {
     const currentDate = new Date();
-    console.log(currentDate.getMonth())
     let yearDifference = currentDate.getFullYear() - this.company[0].joined.getFullYear();
     let monthDifference = (currentDate.getMonth()+1) - (this.company[0].joined.getMonth()+1);
     if(monthDifference < 0) {
