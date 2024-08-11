@@ -11,7 +11,7 @@ function Contents() {
         <h2 style={{ textAlign: 'center', marginTop: '5%' }}>Table of Contents</h2> <hr />
         <div className='col-xs-12' style={{ marginTop: '7%' }}>
           {contents.map((item) => (
-            <div key={item.page} className='crow' onClick={()=>{}}>
+            <div key={item.page} className='toc-items' onClick={() => {}}>
               <div>{item.name}</div>
               <div>{item.page}</div>
             </div>

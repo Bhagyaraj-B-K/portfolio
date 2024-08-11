@@ -62,7 +62,7 @@ function Booklet(props: BookletProps) {
     <div id='booklet' style={{ background: `url("/backgrounds/${constants.BG_IMG.IMG_FILE(props.bg)}")` }}>
       <HTMLFlipBook {...bookletProps}>
         {pages.map((PageComponent, index) => (
-          <Page number={index + 1} key={index+1}>
+          <Page number={index + 1} key={index + 1}>
             <PageComponent />
           </Page>
         ))}

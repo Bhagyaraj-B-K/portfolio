@@ -1,17 +1,17 @@
-.crow {
+.toc-items {
   border-bottom: 1px dashed black;
   height: 15px;
   clear: right;
   margin-bottom: 16px;
 }
 
-.crow div:first-of-type {
+.toc-items div:first-of-type {
   float: left;
   background: rgb(221, 209, 161);
   padding-right: 5px;
 }
 
-.crow div:last-of-type {
+.toc-items div:last-of-type {
   float: right;
   margin-top: 1px;
   background: rgb(221, 209, 161);
