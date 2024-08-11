@@ -50,7 +50,15 @@ export interface PageFlip {
   getFlipController(): number
   getOrientation(): 'potrait' | 'landscape'
   getPage(t2: number): number
-  getPageCollection(): number
+  getPageCollection(): {
+    currentPageIndex: number
+    currentSpreadIndex: number
+    element: HTMLDivElement
+    isShowCover: boolean
+    landscapeSpread: Array<Array<number>>
+    pages: Array<number>
+    portraitSpread: Array<Array<number>>
+  }
   getPageCount(): number
   getRender(): number
   getSettings(): number
@@ -76,7 +84,7 @@ export interface FlipBookInterface {
   pageFlip(): PageFlip
 }
 
-const pages = [Introduction, Blank, Contents, Blank, Blank, Skills, Experience, Blank, Blank]
+const pages = [Introduction, Blank, Contents, Blank, Blank, Skills, Experience, Blank, Blank, Blank, Blank, Blank]
 
 interface BookletProps {
   bg: number
@@ -112,7 +120,7 @@ function Booklet(props: BookletProps) {
       >
         {pages.map((PageComponent, index) => (
           <Page number={index + 1} key={index + 1}>
-            <PageComponent pageFlip={getPageFlip} data={index} />
+            <PageComponent pageFlip={getPageFlip} data={index - 1} />
           </Page>
         ))}
       </HTMLFlipBook>
