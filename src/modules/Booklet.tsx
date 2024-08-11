@@ -7,7 +7,11 @@ import constants from '../constants'
 import Contents from './Contents'
 import React from 'react'
 
-const Blank = () => <></>
+const Blank = (props: { data: number }) => (
+  <>
+    <h1 style={{ textAlign: 'center' }}>{props.data}</h1>
+  </>
+)
 
 const bookletProps = {
   className: 'magazine',
@@ -35,7 +39,44 @@ const bookletProps = {
   disableFlipByClick: false
 }
 
-const pages = [Introduction, Blank, Contents, Skills, Experience]
+export interface PageFlip {
+  clear(): void
+  destroy(): void
+  flip(t2?: number, e2?: number): void
+  flipNext(t2?: number): void
+  flipPrev(t2?: number): void
+  getBoundsRect(): number
+  getCurrentPageIndex(): number
+  getFlipController(): number
+  getOrientation(): 'potrait' | 'landscape'
+  getPage(t2: number): number
+  getPageCollection(): number
+  getPageCount(): number
+  getRender(): number
+  getSettings(): number
+  getState(): number
+  getUI(): number
+  loadFromHTML(t2: number): void
+  loadFromImages(t2: number): void
+  startUserTouch(t2: number): void
+  turnToNextPage(): void
+  turnToPage(t2: number): void
+  turnToPrevPage(): void
+  update(): void
+  updateFromHtml(t2: number): void
+  updateFromImages(t2: number): void
+  updateOrientation(t2: number): void
+  updatePageIndex(t2: number): void
+  updateState(t2: number): void
+  userMove(t2: number, e2: number): void
+  userStop(t2: number, e2?: boolean): void
+}
+
+export interface FlipBookInterface {
+  pageFlip(): PageFlip
+}
+
+const pages = [Introduction, Blank, Contents, Blank, Blank, Skills, Experience, Blank, Blank]
 
 interface BookletProps {
   bg: number
@@ -57,13 +98,21 @@ const Page = React.forwardRef(
   }
 )
 
+let pageFlip: FlipBookInterface
+const getPageFlip = () => pageFlip.pageFlip()
+
 function Booklet(props: BookletProps) {
   return (
     <div id='booklet' style={{ background: `url("/backgrounds/${constants.BG_IMG.IMG_FILE(props.bg)}")` }}>
-      <HTMLFlipBook {...bookletProps}>
+      <HTMLFlipBook
+        {...bookletProps}
+        ref={(component) => {
+          pageFlip = component
+        }}
+      >
         {pages.map((PageComponent, index) => (
           <Page number={index + 1} key={index + 1}>
-            <PageComponent />
+            <PageComponent pageFlip={getPageFlip} data={index} />
           </Page>
         ))}
       </HTMLFlipBook>
