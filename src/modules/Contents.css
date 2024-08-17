@@ -7,14 +7,14 @@
 
 .toc-items div:first-of-type {
   float: left;
-  background: rgb(221, 209, 161);
+  background: rgba(255, 255, 253, 0.762);
   padding-right: 5px;
 }
 
 .toc-items div:last-of-type {
   float: right;
   margin-top: 1px;
-  background: rgb(221, 209, 161);
-  width: 50px;
+  background: rgba(255, 249, 249, 0.652);
+  width: 20px;
   text-align: right;
 }

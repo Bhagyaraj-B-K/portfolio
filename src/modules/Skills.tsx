@@ -4,8 +4,8 @@ import './Skills.css'
 function Skills() {
   return (
     <>
-      <div style={{ textAlign: 'center', width: '90%', margin: '0 auto', fontFamily: 'cursive' }}>
-        <h2 style={{ textAlign: 'center', marginTop: '5%' }}>Skills</h2> <hr />
+      <div className='skills'>
+        <h2 style={{ textAlign: 'center', marginTop: '5%', textDecoration: 'underline wavy 1.5px' }}>Skills</h2> <hr />
         {Object.keys(skills).map((category) => (
           <div key={category}>
             <h5 style={{ marginTop: '7%' }}>{category}</h5>
