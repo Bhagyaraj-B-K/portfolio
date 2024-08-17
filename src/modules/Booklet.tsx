@@ -6,12 +6,10 @@ import Experience from './Experience'
 import constants from '../constants'
 import Contents from './Contents'
 import React from 'react'
+import Education from './Education'
+import Projects from './Projects'
 
-const Blank = (props: { data: number }) => (
-  <>
-    <h1 style={{ textAlign: 'center' }}>{props.data}</h1>
-  </>
-)
+const Blank = () => <></>
 
 const bookletProps = {
   className: 'magazine',
@@ -84,7 +82,7 @@ export interface FlipBookInterface {
   pageFlip(): PageFlip
 }
 
-const pages = [Introduction, Blank, Contents, Blank, Blank, Skills, Experience, Blank, Blank, Blank, Blank, Blank]
+const pages = [Introduction, Blank, Contents, Skills, Education, Experience, Projects, Blank]
 
 interface BookletProps {
   bg: number
@@ -120,7 +118,7 @@ function Booklet(props: BookletProps) {
       >
         {pages.map((PageComponent, index) => (
           <Page number={index + 1} key={index + 1}>
-            <PageComponent pageFlip={getPageFlip} data={index - 1} />
+            <PageComponent pageFlip={getPageFlip} />
           </Page>
         ))}
       </HTMLFlipBook>
