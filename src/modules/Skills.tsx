@@ -13,13 +13,20 @@ function Skills() {
               {skills[category].map((skill) => (
                 <div className='stamp-border' key={skill.title} style={{ display: 'flex', alignItems: 'center' }}>
                   <div className='stamp-border__content'>
-                    <img
-                      src={skill.image}
-                      alt={skill.title}
-                      width='50'
-                      height='50'
-                      style={{ padding: '5%', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', borderRadius: '5px' }}
-                    />
+                    <dfn title={skill.title}>
+                      <img
+                        src={skill.image}
+                        alt={skill.title}
+                        width='50'
+                        height='50'
+                        style={{
+                          padding: '5%',
+                          boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+                          borderRadius: '5px',
+                          border: '3px solid #D39B44'
+                        }}
+                      />
+                    </dfn>
                   </div>
                 </div>
               ))}
