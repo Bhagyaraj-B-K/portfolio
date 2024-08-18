@@ -21,7 +21,7 @@ export default {
       image: 'https://www.njs2.com/assets/images/njs2-logo.png'
     }
   ],
-  DBMS: [
+  Dbms: [
     {
       title: 'MongoDB',
       image: 'https://w7.pngwing.com/pngs/956/695/png-transparent-mongodb-original-wordmark-logo-icon-thumbnail.png'

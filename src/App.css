@@ -4,3 +4,18 @@
   height: 100%;
   width: 100%;
 }
+
+@font-face {
+  font-family: 'Scribble';
+  src: url('/fonts/Scribble.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lovtony';
+  src: url('/fonts/Lovtony.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Javacom';
+  src: url('/fonts/Javacom.otf') format('opentype');
+}

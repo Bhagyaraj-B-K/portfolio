@@ -5,15 +5,22 @@ function Education() {
   return (
     <>
       <div className='education'>
-        <h2 style={{ textAlign: 'center', marginTop: '5%', textDecoration: 'underline wavy 1.5px' }}>Education</h2> <hr />
-        <img className='graduation-image' src='/graduation.png' alt='Education' width='60%' /> <hr />
+        <h1 style={{ textAlign: 'center', marginTop: '7%', textDecoration: 'underline wavy 1.5px' }}>
+          <strong>Education</strong>
+        </h1>
+        <hr />
+        <img className='graduation-image' src='/graduation.png' alt='Education' width='55%' /> <hr />
         <div className='education-details'>
-          <h4>
-            {education.degree}, {education.graduationYear}
-          </h4>
+          <h5>
+            <strong>
+              {education.degree}, {education.graduationYear}
+            </strong>
+          </h5>
           <p>{education.university}</p>
-          <p>GPA: {education.gpa}</p>
-          <p style={{ fontSize: '8px' }}>{education.summary}</p>
+          <h5 style={{ fontSize: '12px' }}>
+            <strong>GPA: {education.gpa}</strong>
+          </h5>
+          <p style={{ fontSize: '9px' }}>{education.summary}</p>
         </div>
       </div>
     </>

@@ -2,7 +2,7 @@ import HTMLFlipBook from 'react-pageflip'
 import './Booklet.css'
 import Introduction from './Introduction'
 import Skills from './Skills'
-import Experience from './Experience'
+import ExperiencePage1 from './Experience/ExperiencePage1'
 import constants from '../constants'
 import Contents from './Contents'
 import React from 'react'
@@ -82,7 +82,7 @@ export interface FlipBookInterface {
   pageFlip(): PageFlip
 }
 
-const pages = [Introduction, Blank, Contents, Skills, Education, Experience, Projects, Blank]
+const pages = [Introduction, Blank, Contents, Skills, Education, ExperiencePage1, Projects, Blank]
 
 interface BookletProps {
   bg: number

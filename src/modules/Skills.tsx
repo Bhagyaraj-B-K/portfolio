@@ -5,7 +5,10 @@ function Skills() {
   return (
     <>
       <div className='skills'>
-        <h2 style={{ textAlign: 'center', marginTop: '5%', textDecoration: 'underline wavy 1.5px' }}>Skills</h2> <hr />
+        <h1 style={{ textAlign: 'center', marginTop: '7%', textDecoration: 'underline wavy 1.5px' }}>
+          <strong>Skills</strong>
+        </h1>{' '}
+        <hr />
         {Object.keys(skills).map((category) => (
           <div key={category}>
             <h5 style={{ marginTop: '7%' }}>{category}</h5>
