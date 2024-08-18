@@ -7,7 +7,7 @@
 
 .stamp-border {
   /* Background */
-  background-color: #3b2b2b7a;
+  background-color: #b88b41;
   background-image: radial-gradient(rgb(255, 247, 213) 40%, transparent 50%);
   background-position: -0.25rem -0.25rem;
   background-repeat: repeat;
@@ -22,4 +22,5 @@
   background-color: #efe6e6;
   height: 97%;
   width: 97%;
+  filter: grayscale(70%);
 }

@@ -1,0 +1,10 @@
+.education {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  font-family: cursive;
+}
+
+.graduation-image {
+  filter: grayscale(100%);
+}
