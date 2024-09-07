@@ -10,6 +10,11 @@ import Education from './Education'
 import Projects from './Projects'
 
 const Blank = () => <></>
+const WhitePage = () => (
+  <>
+    <div style={{ background: 'white', width: '100%', height: '100%' }}></div>
+  </>
+)
 
 const bookletProps = {
   className: 'magazine',
@@ -82,7 +87,7 @@ export interface FlipBookInterface {
   pageFlip(): PageFlip
 }
 
-const pages = [Introduction, Blank, Contents, Skills, Education, ExperiencePage1, Projects, Blank]
+const pages = [Introduction, Blank, Contents, Skills, Education, ExperiencePage1, WhitePage, Projects, Blank]
 
 interface BookletProps {
   bg: number
