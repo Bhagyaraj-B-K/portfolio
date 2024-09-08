@@ -14,20 +14,40 @@ function ExperiencePage1() {
             </div>
             <div className='categories'>
               <div className='category'>
-                <h3>CATEGORY NAME 01</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
+                <h3>INDIA</h3>
+                <p>
+                  <strong>Bangalore</strong>
+                </p>
+                <p>GR Grand Plaza, 2nd Floor, JP Nagar 6th Phase, Bangalore - 560078</p>
+                <p>
+                  <strong>Mangalore</strong>
+                </p>
+                <p>D.No. 1-N-5-39`/56, Bhandary Heights, Derebail Village Mangalore Taluk - 575006</p>
               </div>
               <div className='category'>
-                <h3>CATEGORY NAME 02</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+                <h3>USA</h3>
+                <p>
+                  <strong>Texas</strong>
+                </p>
+                <p>Epic Suites 4740 14th ST. suite T3, Plano, TX 75054</p>
+                <p>
+                  <strong>Miami</strong>
+                </p>
+                <p>1000 Island BLVD, #1806, Aventura Florida - 33160</p>
               </div>
               <div className='category'>
-                <h3>CATEGORY NAME 03</h3>
-                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.</p>
+                <h3>UNITED KINGDOM</h3>
+                <p>
+                  <strong>London</strong>
+                </p>
+                <p>#152, City Road EC1V 2NX</p>
               </div>
               <div className='category'>
-                <h3>CATEGORY NAME 04</h3>
-                <p>Etiam eget quam ut mi cursus gravida quis at felis. Morbi consectetur elit at ex tincidunt.</p>
+                <h3>SAUDI ARABIA</h3>
+                <p>
+                  <strong>Jeddah</strong>
+                </p>
+                <p>St Idris Square, 4036 Helmi Koutbi, Al Zahra, Jeddah 23425, Saudi Arabia</p>
               </div>
             </div>
           </div>
