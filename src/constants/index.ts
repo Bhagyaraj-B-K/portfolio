@@ -1,4 +1,5 @@
 import BIO from './bio'
+import PROJECTS from './projects'
 
 interface Constants {
   STATUS: {
@@ -28,3 +29,4 @@ const constants: Constants = {
 
 export default constants;
 export const bio = BIO;
+export const projects = PROJECTS;

@@ -1,0 +1,106 @@
+.korus {
+  background: white;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.projects-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.projects-header span {
+  font-size: x-small;
+  font-weight: bold;
+  margin-right: 2%;
+}
+
+.horizontal-line {
+  height: 2px;
+  background-color: black;
+  width: 50%;
+}
+
+.profile-container {
+  padding: 4.8%;
+}
+
+.profile-section {
+  display: flex;
+}
+
+.left-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+}
+
+.image-wrapper {
+  width: 70%;
+  height: 30%;
+  padding-bottom: 25%;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.profile-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.profile-details {
+  text-align: center;
+  margin-top: 2%;
+}
+
+.profile-details h3 {
+  margin: 0;
+  font-size: 1.8vw; /* Relative to viewport width */
+  font-weight: bold;
+}
+
+.profile-details p {
+  margin: 2% 0;
+  font-size: x-small;
+  color: #555;
+}
+
+.right-panel {
+  flex: 2;
+  padding: 5%;
+}
+
+.right-panel p {
+  margin-bottom: 3%;
+  font-size: x-small;
+  color: #666;
+  line-height: 1.6;
+}
+
+.bottom-image-section {
+  position: relative;
+  text-align: center;
+}
+
+.bottom-image {
+  width: 100%;
+  height: auto;
+}
+
+.bottom-link {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  font-size: x-small;
+  color: #666;
+}

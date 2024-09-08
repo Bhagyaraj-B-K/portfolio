@@ -7,7 +7,7 @@ import constants from '../constants'
 import Contents from './Contents'
 import React from 'react'
 import Education from './Education'
-import Projects from './Projects'
+import Korus from './Projects/Korus'
 
 const Blank = () => <></>
 const WhitePage = () => (
@@ -87,7 +87,7 @@ export interface FlipBookInterface {
   pageFlip(): PageFlip
 }
 
-const pages = [Introduction, Blank, Contents, Skills, Education, ExperiencePage1, WhitePage, Projects, Blank]
+const pages = [Introduction, Blank, Contents, Skills, Education, ExperiencePage1, WhitePage, Korus, Blank]
 
 interface BookletProps {
   bg: number

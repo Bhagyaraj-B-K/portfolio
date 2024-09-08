@@ -5,7 +5,7 @@ const contents = [
   { name: 'Skills', page: 2 },
   { name: 'Education', page: 3 },
   { name: 'Experience', page: 4 },
-  { name: 'Projects', page: 5 }
+  { name: 'Projects', page: 6 }
 ]
 function Contents(props: { pageFlip: () => PageFlip }) {
   return (
