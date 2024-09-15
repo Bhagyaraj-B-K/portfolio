@@ -1,0 +1,82 @@
+.njs2 {
+  background: #0a0a0a;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.njs2 .magazine-container {
+  color: #fff;
+  padding: 4%;
+  font-family: 'Arial', sans-serif;
+  height: 100%;
+}
+
+.njs2 .magazine-header {
+  margin-bottom: 5%;
+  text-align: left;
+}
+
+.njs2 .magazine-title {
+  font-size: 450%;
+  font-weight: bold;
+  margin: 0;
+}
+
+.njs2 .magazine-subtitle {
+  font-size: large;
+  font-weight: bold;
+  margin: 0;
+}
+
+.njs2 .magazine-info {
+  padding-top: 3%;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  text-align: right;
+}
+
+.njs2 .magazine-info p {
+  font-size: xx-small;
+}
+
+.njs2 .important-title {
+  margin-bottom: 10%;
+}
+
+.njs2 .titles-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.njs2 .title-item h3 {
+  font-size: x-small;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.njs2 .title-item p {
+  font-size: 45%;
+}
+
+
+.njs2 .magazine-main-content {
+  margin-top: 10%;
+}
+
+.njs2 .njs2-left-panel {
+  float: left;
+  width: 60%;
+  border-right: inherit;
+  text-align: left;
+  padding: 20px;
+}
+
+.njs2 .njs2-right-panel {
+  margin-top: 20%;
+  float: right;
+  width: 40%;
+  text-align: right;
+}

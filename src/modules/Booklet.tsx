@@ -9,6 +9,7 @@ import React from 'react'
 import Education from './Education'
 import Korus from './Projects/Korus'
 import Scs from './Projects/Scs'
+import Njs2 from './Projects/Njs2'
 
 const Blank = () => <></>
 const WhitePage = () => (
@@ -88,7 +89,7 @@ export interface FlipBookInterface {
   pageFlip(): PageFlip
 }
 
-const pages = [Introduction, Blank, Contents, Skills, Education, ExperiencePage1, WhitePage, Korus, Scs, Blank]
+const pages = [Introduction, Blank, Contents, Skills, Education, ExperiencePage1, WhitePage, Korus, Scs, Njs2, Blank]
 
 interface BookletProps {
   bg: number
