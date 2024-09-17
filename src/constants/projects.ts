@@ -41,5 +41,30 @@ export default {
     It provides version control just like NPM registry. 
     Verdaccio also allows Authentication plugins to authenticate the client using the registry.`,
     images: ['njs2.png']
+  },
+  UFOFilmyMuqabla: {
+    name: 'UFO Filmy Muqabla',
+    client: 'BAM Games',
+    link: 'https://play.google.com/store/apps/details?id=com.ufo.moviezmania',
+    description: `A dynamic film trivia quiz game where players can challenge themselves or compete with friends in solo and turn-based modes. 
+    With tournaments, power-ups, and missions, players test their movie knowledge across a wide variety of questions, earning rewards and bragging rights.`,
+    images: ['ufo.jpg']
+  },
+  FalconDash: {
+    name: 'Falcon Dash',
+    client: 'Juego Studios',
+    link: 'https://apps.apple.com/in/app/falcon-dash/id1604734961?platform=iphone',
+    description: `An exciting endless runner set in the cities of Saudi Arabia. Players navigate obstacles, collect coins, and unlock special abilities with the help of a falcon companion. 
+    With vibrant cityscapes, power-ups, and competitive multiplayer modes, Falcon Dash delivers a fun and immersive hyper-casual escape adventure.`,
+    images: ['falcondash.jpg']
+  },
+  JHub: {
+    name: 'JHub',
+    client: 'Juego Studios',
+    link: 'https://jhub.juegostudio.com/',
+    description: `A comprehensive employee management platform for Juego Studios, designed to streamline daily work updates, scrums, and effort tracking. 
+    JHub features leave management, resume building from project data, hierarchical user stories, and performance reporting for appraisals. 
+    It also integrates a test case management system to enhance QA processes, along with timesheet tracking to monitor employee productivity.`,
+    images: ['jhub.jpeg']
   }
 }
