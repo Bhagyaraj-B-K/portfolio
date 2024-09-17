@@ -1,0 +1,39 @@
+.quote-1 {
+  background: white;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.quote-1 .quote-card {
+  background-color: #F9D510; 
+  height: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+  font-family: 'Playfair Display', serif;
+  color: #000;
+  text-align: center;
+}
+
+/* Container for the text */
+.quote-1 .quote-content {
+  max-width: 90%;
+}
+
+/* Main quote styling */
+.quote-1 .quote-text {
+  font-size: 200%;
+  line-height: 1.3;
+  /* font-weight: bold; */
+}
+
+/* Author styling */
+.quote-1 .quote-author {
+  font-size: medium;
+  margin-top: 1rem;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+}
