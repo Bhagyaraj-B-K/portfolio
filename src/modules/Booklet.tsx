@@ -12,8 +12,8 @@ import Scs from './Projects/Scs'
 import Njs2 from './Projects/Njs2'
 import OtherProjects from './Projects/Others'
 import Quote from './Quote'
+import ContentsCover from './ContentsCover'
 
-const Blank = () => <></>
 const WhitePage = () => (
   <>
     <div style={{ background: 'white', width: '100%', height: '100%' }}></div>
@@ -91,7 +91,7 @@ export interface FlipBookInterface {
   pageFlip(): PageFlip
 }
 
-const pages = [Introduction, Blank, Contents, Skills, Education, Quote, ExperiencePage1, Korus, Scs, Njs2, OtherProjects, WhitePage]
+const pages = [Introduction, ContentsCover, Contents, Skills, Education, Quote, ExperiencePage1, Korus, Scs, Njs2, OtherProjects, WhitePage]
 
 interface BookletProps {
   bg: number

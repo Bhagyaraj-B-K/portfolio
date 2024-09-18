@@ -1,4 +1,4 @@
-.contents {
+/* .contents {
   text-align: center;
   width: 90%;
   margin: 0 auto;
@@ -24,4 +24,46 @@
   background: rgba(255, 249, 249, 0.652);
   width: 20px;
   text-align: right;
+} */
+
+.content {
+  background: white;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.content .content-container {
+  width: 100%;
+  height: 100%;
+}
+
+.content .content-item {
+  width: 100%;
+  overflow: hidden;
+  height: 25%;
+}
+
+.content .page-number {
+  float: left;
+  width: 19%;
+  background: black;
+  color: white;
+  font-size: 500%;
+  font-weight: bold;
+  text-align: center;
+  height: 100%;
+}
+
+.content .content-name {
+  float: right;
+  width: 81%;
+  background-color: white;
+  color: black;
+  font-size: 500%;
+  letter-spacing: -11px;
+  text-align: left;
+  cursor: pointer;
+  display:flex;
 }

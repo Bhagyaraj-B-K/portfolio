@@ -8,7 +8,9 @@ function ExperiencePage1() {
         <div className='page1-top'>
           <div className='container'>
             <div className='left-panel'>
-              <p>EXPERIENCES</p>
+              <p>
+                <strong>EXPERIENCES</strong>
+              </p>
               <p>2022 - present</p>
               <p>Backend Dev</p>
             </div>
