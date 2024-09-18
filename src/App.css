@@ -3,6 +3,7 @@
   background-color: black;
   height: 100%;
   width: 100%;
+  cursor: url('./assets/cursors/cursor3.cur'), auto;
 }
 
 @font-face {
