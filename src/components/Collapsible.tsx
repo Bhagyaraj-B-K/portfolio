@@ -18,7 +18,11 @@ function Collapsible(props: CollapsibleProps) {
   }
   return (
     <div className={`collapsible ${isExpanded ? 'expanded' : 'collapsed'} ${props.classNames}`}>
-      <div className='header col-md-12 d-flex justify-content-between align-items-center' {...getToggleProps({ onClick: handleOnClick })}>
+      <div
+        className='header col-md-12 d-flex justify-content-between align-items-center'
+        {...getToggleProps({ onClick: handleOnClick })}
+        style={{ cursor: 'url("/src/assets/cursors/pointer1.png"), url("/src/assets/cursors/pointer1.cur"), pointer' }}
+      >
         {props.icon}
         <span className='col-md-8 text-center'>{props.title}</span>
         {isExpanded ? <VscCollapseAll className='col-md-2 text-right' /> : <VscExpandAll className='col-md-2 text-right' />}

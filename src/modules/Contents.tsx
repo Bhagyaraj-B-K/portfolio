@@ -40,9 +40,8 @@ function Contents(props: { pageFlip: () => PageFlip }) {
       <div className='content-container'>
         {contents.map((item) => (
           <div className='content-item' key={item.page}>
-            <div className='page-number'>{item.page}</div>
             <div
-              className='content-name'
+              className='page-number'
               onClick={async () => {
                 const orientation = props.pageFlip().getOrientation()
                 const pageFlipIndex = orientation === 'landscape' ? Math.floor((item.page - 2) / 2) : item.page - 2
@@ -52,8 +51,9 @@ function Contents(props: { pageFlip: () => PageFlip }) {
                 }
               }}
             >
-              {item.name.toUpperCase()}
+              {item.page}
             </div>
+            <div className='content-name'>{item.name.toUpperCase()}</div>
           </div>
         ))}
       </div>

@@ -75,7 +75,7 @@ function Hamburger(props: HamburgerProps) {
   ]
 
   return (
-    <Menu right isOpen={isOpen} onOpen={toggleOpen} onClose={toggleOpen}>
+    <Menu className='hamburger' right isOpen={isOpen} onOpen={toggleOpen} onClose={toggleOpen}>
       <Collapsible
         title='Background Themes'
         icon={<MdTableRestaurant />}

@@ -54,6 +54,7 @@
   font-weight: bold;
   text-align: center;
   height: 100%;
+  cursor: url('../assets/cursors/pointer1.png'), url('../assets/cursors/pointer1.cur'), pointer;
 }
 
 .content .content-name {
