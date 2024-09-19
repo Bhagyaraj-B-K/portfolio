@@ -95,6 +95,7 @@ const pages = [Introduction, ContentsCover, Contents, Skills, Education, Quote, 
 
 interface BookletProps {
   bg: number
+  setPageFlip: React.Dispatch<() => PageFlip>
 }
 
 const Page = React.forwardRef(
@@ -123,6 +124,7 @@ function Booklet(props: BookletProps) {
         {...bookletProps}
         ref={(component) => {
           pageFlip = component
+          props.setPageFlip(getPageFlip)
         }}
       >
         {pages.map((PageComponent, index) => (

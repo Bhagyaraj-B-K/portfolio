@@ -63,13 +63,13 @@
   background: rgba(0, 0, 0, 0.3);
 }
 
-.menu-item {
+.menu-item, .content-item {
   font-size: small;
 }
 
 .collapsible {
   border: 0.5px outset #bdbdbd; 
-  padding: 10px;
+  padding: 10px 10px 17px 10px;
   transition: border-radius 0.5s ease;
 }
 
@@ -94,4 +94,15 @@
 .list-group .active {
   background-color: #1d1e23 !important;
   border-color: inherit !important;
+}
+
+.list-group:not(.active){
+  background-color: #373a47 !important;
+}
+
+.content-sub-item {
+  font-size: 60%;
+  background-color: rgba(136, 136, 136, 0.382) !important;
+  border-color: rgba(179, 179, 179, 0.574) !important;
+  padding: 5px !important
 }
