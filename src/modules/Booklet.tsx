@@ -13,12 +13,7 @@ import Njs2 from './Projects/Njs2'
 import OtherProjects from './Projects/Others'
 import Quote from './Quote'
 import ContentsCover from './ContentsCover'
-
-const WhitePage = () => (
-  <>
-    <div style={{ background: 'white', width: '100%', height: '100%' }}></div>
-  </>
-)
+import Ending from './Ending'
 
 const bookletProps = {
   className: 'magazine',
@@ -91,7 +86,7 @@ export interface FlipBookInterface {
   pageFlip(): PageFlip
 }
 
-const pages = [Introduction, ContentsCover, Contents, Skills, Education, Quote, ExperiencePage1, Korus, Scs, Njs2, OtherProjects, WhitePage]
+const pages = [Introduction, ContentsCover, Contents, Skills, Education, Quote, ExperiencePage1, Korus, Scs, Njs2, OtherProjects, Ending]
 
 interface BookletProps {
   bg: number

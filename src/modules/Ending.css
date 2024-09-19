@@ -1,0 +1,22 @@
+.magazine-ending-outer {
+  background: black;
+  width: 100%;
+  height: 100%;
+}
+
+.magazine-ending {
+  background: url('/profile/magazineEnding.jpg');
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  filter:grayscale();
+  opacity: 50%;
+}
+
+.magazine-ending .center-piece {
+  text-align: center;
+  opacity: 100%;
+  color: whitesmoke;
+  padding-top: 55%;
+  font-family: 'Javacom', 'Lucida Handwriting', cursive;
+}

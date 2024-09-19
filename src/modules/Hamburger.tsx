@@ -6,7 +6,6 @@ import Collapsible from '../components/Collapsible'
 import ListGroup from '../components/ListGroup'
 import { MdMenuBook, MdTableRestaurant } from 'react-icons/md'
 import { PageFlip } from './Booklet'
-// import { PageFlip } from './Booklet'
 
 interface HamburgerProps {
   bg: number
@@ -36,6 +35,11 @@ function Hamburger(props: HamburgerProps) {
       name: 'Background 3',
       className: `menu-item ${props.bg == constants.BG_IMG.BG3 && 'active'}`,
       onClick: () => props.changeBg(constants.BG_IMG.BG3)
+    },
+    {
+      name: 'Background 4',
+      className: `menu-item ${props.bg == constants.BG_IMG.BG4 && 'active'}`,
+      onClick: () => props.changeBg(constants.BG_IMG.BG4)
     }
   ]
 

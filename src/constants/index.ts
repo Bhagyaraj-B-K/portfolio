@@ -10,6 +10,7 @@ interface Constants {
     BG1: number;
     BG2: number;
     BG3: number;
+    BG4: number;
     IMG_FILE: (img: number) => string;
   };
 }
@@ -23,6 +24,7 @@ const constants: Constants = {
         BG1: 0,
         BG2: 1,
         BG3: 2,
+        BG4: 3,
         IMG_FILE: (img: number) => `bg_${img}.jpg`
     }
 }
