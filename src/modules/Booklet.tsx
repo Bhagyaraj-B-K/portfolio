@@ -50,7 +50,7 @@ export interface PageFlip {
   getBoundsRect(): number
   getCurrentPageIndex(): number
   getFlipController(): number
-  getOrientation(): 'potrait' | 'landscape'
+  getOrientation(): 'portrait' | 'landscape'
   getPage(t2: number): number
   getPageCollection(): {
     currentPageIndex: number

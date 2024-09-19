@@ -66,12 +66,12 @@ function Hamburger(props: HamburgerProps) {
     { name: 'Skillset', page: 3, className: 'content-item', onClick: async () => pageFlipOnClick(3) },
     { name: 'Education', page: 4, className: 'content-item', onClick: async () => pageFlipOnClick(4) },
     { name: 'Experience', page: 6, className: 'content-item', onClick: async () => pageFlipOnClick(6) },
-    { name: 'Juego Studios', page: 6, className: 'content-sub-item', onClick: async () => pageFlipOnClick(6) },
+    { name: '⬩ Juego Studios', page: 6, className: 'content-sub-item', onClick: async () => pageFlipOnClick(6) },
     { name: 'Projects', page: 7, className: 'content-item', onClick: async () => pageFlipOnClick(7) },
-    { name: 'Korus', page: 7, className: 'content-sub-item', onClick: async () => pageFlipOnClick(7) },
-    { name: 'Super Club Soccer', page: 8, className: 'content-sub-item', onClick: async () => pageFlipOnClick(8) },
-    { name: 'NJS2 Framework', page: 9, className: 'content-sub-item', onClick: async () => pageFlipOnClick(9) },
-    { name: 'Other Projects', page: 10, className: 'content-sub-item', onClick: async () => pageFlipOnClick(10) }
+    { name: '⬩ Korus', page: 7, className: 'content-sub-item', onClick: async () => pageFlipOnClick(7) },
+    { name: '⬩ Super Club Soccer', page: 8, className: 'content-sub-item', onClick: async () => pageFlipOnClick(8) },
+    { name: '⬩ NJS2 Framework', page: 9, className: 'content-sub-item', onClick: async () => pageFlipOnClick(9) },
+    { name: '⬩ Other Projects', page: 10, className: 'content-sub-item', onClick: async () => pageFlipOnClick(10) }
   ]
 
   return (

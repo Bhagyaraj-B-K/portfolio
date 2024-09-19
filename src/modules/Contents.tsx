@@ -44,6 +44,8 @@ function Contents(props: { pageFlip: () => PageFlip }) {
               className='page-number'
               onClick={async () => {
                 const orientation = props.pageFlip().getOrientation()
+                if (orientation === 'portrait') return
+                console.log(orientation)
                 const pageFlipIndex = orientation === 'landscape' ? Math.floor((item.page - 2) / 2) : item.page - 2
                 for (let i = 0; i < pageFlipIndex; i++) {
                   await new Promise((resolve) => setTimeout(resolve, 1000))

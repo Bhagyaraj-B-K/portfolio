@@ -107,6 +107,6 @@
 .content-sub-item {
   font-size: 60%;
   background-color: rgba(136, 136, 136, 0.382) !important;
-  border-color: rgba(179, 179, 179, 0.574) !important;
+  /* border-color: rgba(179, 179, 179, 0.574) !important; */
   padding: 5px !important
 }
