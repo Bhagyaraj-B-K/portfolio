@@ -1,10 +1,14 @@
 {
+  "homepage": "https://Bhagyaraj-B-K.github.io/portfolio/",
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "tsc && vite build",
     "lint": "eslint  --fix src/**/*.tsx",
     "format": "prettier src/**/*.tsx --write. --config ./.prettierrc",
@@ -12,6 +16,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.2",
+    "gh-pages": "^6.1.1",
     "jquery": "1.12.0",
     "react": "^18.2.0",
     "react-burger-menu": "^3.0.9",
