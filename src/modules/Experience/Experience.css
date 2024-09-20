@@ -28,7 +28,7 @@
 
 .experience .left-panel {
   flex: 1;
-  padding: 20px;
+  padding: 5%;
   border-right: 1px solid #ddd;
   text-align: left;
   font-size: x-small;
@@ -39,7 +39,7 @@
   flex: 3;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 20px;
+  padding-top: 5%;
 }
 
 .experience .category {
@@ -50,11 +50,11 @@
 .experience .category h3 {
   color: #e60055;
   font-size: x-small;
-  margin-top: 7px;
+  margin-top: 5%;
 }
 
 .experience .category p {
   color: #666;
-  font-size: 8px;
-  margin: 3px 0;
+  font-size: 50%;
+  margin: 2% 0;
 }

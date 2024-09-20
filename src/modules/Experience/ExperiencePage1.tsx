@@ -57,7 +57,7 @@ function ExperiencePage1() {
             style={{
               fontFamily: '"Montserrat", "Lucida Console", "Courier New", monospace',
               paddingTop: '10%',
-              paddingLeft: '30px',
+              paddingLeft: '7%',
               textAlign: 'left'
             }}
           >
