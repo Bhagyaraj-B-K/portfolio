@@ -5,7 +5,11 @@ export default {
     dob: new Date('2000-03-27T00:00:00'),
     get name() {
       return `${this.firstname} ${this.lastname}`;
-    }
+    },
+    github: 'https://github.com/Bhagyaraj-B-K',
+    linkedIn: 'https://www.linkedin.com/in/bhagyaraj-b-k/',
+    instagram: 'https://www.instagram.com/dbz_holix',
+    facebook: 'https://www.facebook.com/share/e9wTngkjjncVwewr/?mibextid=qi2Omg'
   },
   company: [
     {

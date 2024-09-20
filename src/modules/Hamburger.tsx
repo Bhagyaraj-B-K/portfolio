@@ -6,6 +6,8 @@ import Collapsible from '../components/Collapsible'
 import ListGroup from '../components/ListGroup'
 import { MdMenuBook, MdTableRestaurant } from 'react-icons/md'
 import { PageFlip } from './Booklet'
+import { bio } from '../constants'
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
 interface HamburgerProps {
   bg: number
@@ -83,6 +85,20 @@ function Hamburger(props: HamburgerProps) {
         content={<ListGroup items={bgOptions} />}
       />
       <Collapsible title='Contents' icon={<MdMenuBook />} classNames='contents-hb-menu' content={<ListGroup items={contents} />} />
+      <div className='my-socials'>
+        <a href={bio.user.github} target='_blank' rel='noopener noreferrer' className='text-light mx-2'>
+          <FaGithub size={18} />
+        </a>
+        <a href={bio.user.linkedIn} target='_blank' rel='noopener noreferrer' className='text-light mx-2'>
+          <FaLinkedin size={18} />
+        </a>
+        <a href={bio.user.instagram} target='_blank' rel='noopener noreferrer' className='text-light mx-2'>
+          <FaInstagram size={18} />
+        </a>
+        <a href={bio.user.facebook} target='_blank' rel='noopener noreferrer' className='text-light mx-2'>
+          <FaFacebook size={18} />
+        </a>
+      </div>
     </Menu>
   )
 }

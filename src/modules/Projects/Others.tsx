@@ -28,6 +28,7 @@ function OtherProjects() {
           </div>
         </div>
       </div>
+      <div className='last-horizontal-line'></div>
     </div>
   )
 }

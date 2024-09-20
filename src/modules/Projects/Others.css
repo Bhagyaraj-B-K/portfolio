@@ -28,6 +28,14 @@
   margin-left: 27%;
 }
 
+.other-projects .last-horizontal-line {
+  height: 1.5px;
+  background-color: black;
+  width: 68%;
+  margin-top: 10%;
+  margin-left: 27%;
+}
+
 .other-projects .article-section {
   padding: 12% 5% 3% 5%;
   font-family: 'Arial', sans-serif;

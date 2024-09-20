@@ -110,3 +110,13 @@
   /* border-color: rgba(179, 179, 179, 0.574) !important; */
   padding: 5px !important
 }
+
+.my-socials {
+  align-items: center;
+  position: absolute;
+  top: 95%;
+  padding-left: 19%;
+  padding-bottom: 2.2%;
+  width: 90%;
+  background-color: #373a47;
+}
