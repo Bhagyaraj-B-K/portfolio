@@ -1,5 +1,6 @@
 import './Njs2.css'
 import { projects } from '../../constants'
+import { FaLink } from 'react-icons/fa'
 
 function Njs2() {
   return (
@@ -19,7 +20,12 @@ function Njs2() {
         <div className='magazine-main-content'>
           <div className='njs2-left-panel'>
             <div className='important-title'>
-              <h2>{projects.NJS2.name}</h2>
+              <h2>
+                {projects.NJS2.name}{' '}
+                <a href={projects.NJS2.link} target='_blank' rel='noopener noreferrer' style={{ textDecoration: 'none', color: 'inherit' }}>
+                  <FaLink style={{ fontSize: 'small' }} />
+                </a>
+              </h2>
             </div>
             <p style={{ fontSize: 'xx-small' }}>{projects.NJS2.description}</p>
           </div>

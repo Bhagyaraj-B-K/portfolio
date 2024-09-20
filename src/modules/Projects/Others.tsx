@@ -1,5 +1,6 @@
 import './Others.css'
 import { projects } from '../../constants'
+import { FaLink } from 'react-icons/fa'
 
 function OtherProjects() {
   return (
@@ -13,17 +14,42 @@ function OtherProjects() {
         <div className='article-columns'>
           <div className='article-column'>
             <img src='/projects/ufo.jpg' alt='UFO Filmy muqabla' className='article-image' />
-            <h3>{projects.UFOFilmyMuqabla.name}</h3>
+            <h3>
+              {projects.UFOFilmyMuqabla.name}{' '}
+              <a
+                href={projects.UFOFilmyMuqabla.link}
+                target='_blank'
+                rel='noopener noreferrer'
+                style={{ textDecoration: 'none', color: 'inherit' }}
+              >
+                <FaLink />
+              </a>
+            </h3>
             <p>{projects.UFOFilmyMuqabla.description}</p>
           </div>
           <div className='article-column' style={{ paddingTop: '15%' }}>
             <img src='/projects/jhub.jpeg' alt='JHub' className='article-image' />
-            <h3>{projects.JHub.name}</h3>
+            <h3>
+              {projects.JHub.name}{' '}
+              <a href={projects.JHub.link} target='_blank' rel='noopener noreferrer' style={{ textDecoration: 'none', color: 'inherit' }}>
+                <FaLink />
+              </a>
+            </h3>
             <p>{projects.JHub.description}</p>
           </div>
           <div className='article-column'>
             <img src='/projects/falcondash.jpg' alt='Article 2' className='article-image' />
-            <h3>{projects.FalconDash.name}</h3>
+            <h3>
+              {projects.FalconDash.name}{' '}
+              <a
+                href={projects.FalconDash.link}
+                target='_blank'
+                rel='noopener noreferrer'
+                style={{ textDecoration: 'none', color: 'inherit' }}
+              >
+                <FaLink />
+              </a>
+            </h3>
             <p>{projects.FalconDash.description}</p>
           </div>
         </div>
