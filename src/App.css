@@ -20,3 +20,33 @@
   font-family: 'Javacom';
   src: url('/fonts/Javacom.otf') format('opentype');
 }
+
+@font-face {
+  font-family: 'Southam';
+  src: url('/fonts/Southam.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Scientist';
+  src: url('/fonts/Scientist.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Creattion';
+  src: url('/fonts/Creattion.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Tomatoes';
+  src: url('/fonts/Tomatoes.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Rockybilly';
+  src: url('/fonts/Rockybilly.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Allisonscript';
+  src: url('/fonts/Allison_Script.otf') format('opentype');
+}
