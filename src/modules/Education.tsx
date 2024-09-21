@@ -9,7 +9,7 @@ function Education() {
           <strong>Education</strong>
         </h1>
         <hr />
-        <img className='graduation-image' src='/graduation.png' alt='Education' width='55%' /> <hr />
+        <img className='graduation-image' src='/graduation_low_res.png' alt='Education' width='55%' /> <hr />
         <div className='education-details'>
           <h5>
             <strong>
