@@ -10,7 +10,7 @@ function Scs() {
           <div className='horizontal-line'></div>
         </div>
         <div className='summary-header'>
-          <h3>SCS</h3>
+          <h3 style={{ fontSize: 'x-large' }}>SCS</h3>
           <p>{projects.SCS.client}</p>
           <a
             href={projects.SCS.link}
