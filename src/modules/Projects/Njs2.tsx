@@ -20,7 +20,7 @@ function Njs2() {
         <div className='magazine-main-content'>
           <div className='njs2-left-panel'>
             <div className='important-title'>
-              <h2>
+              <h2 style={{ fontSize: 'xx-large' }}>
                 {projects.NJS2.name}{' '}
                 <a href={projects.NJS2.link} target='_blank' rel='noopener noreferrer' style={{ textDecoration: 'none', color: 'inherit' }}>
                   <FaLink style={{ fontSize: 'small' }} />
