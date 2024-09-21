@@ -56,9 +56,10 @@ function ExperiencePage1() {
           <h1
             style={{
               fontFamily: '"Montserrat", "Lucida Console", "Courier New", monospace',
-              paddingTop: '10%',
+              paddingTop: '8.5%',
               paddingLeft: '7%',
-              textAlign: 'left'
+              textAlign: 'left',
+              fontSize: '230%'
             }}
           >
             JUEGO STUDIOS

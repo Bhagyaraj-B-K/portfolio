@@ -4,6 +4,7 @@
   height: 100%;
   text-align: center;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .korus .projects-header {
@@ -68,7 +69,7 @@
 
 .korus .profile-details h3 {
   margin: 0;
-  font-size: 1.8vw; /* Relative to viewport width */
+  font-size: 250%; /* Relative to viewport width */
   font-weight: bold;
 }
 
@@ -85,9 +86,10 @@
 
 .korus .right-panel p {
   margin-bottom: 3%;
-  font-size: x-small;
+  font-size: 62.5%;
   color: #666;
   line-height: 160%;
+  width: 100%;
 }
 
 .korus .bottom-image-section {
