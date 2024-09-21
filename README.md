@@ -1,30 +1,49 @@
-# React + TypeScript + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website, designed to showcase my skills and projects in a unique book/magazine-style format. The project is built with React using Vite, and uses the `react-pageflip` library to create a flipbook-like user experience.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Book/Magazine-style layout**: Navigate through my portfolio as though flipping the pages of a book.
+- **Hamburger menu**: Switch between different sections easily.
+- **Dynamic background**: Background images can change depending on the section of the portfolio.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**: Frontend library for building the UI.
+- **Vite**: Fast build tool for modern web projects.
+- **TypeScript**: For type safety and better development experience.
+- **react-pageflip**: To achieve the book/magazine-style flipping effect.
+- **Bootstrap**: For responsive design and styling.
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+1. Clone the repository:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+    ```bash
+    git clone https://github.com/Bhagyaraj-B-K/portfolio.git
+    cd portfolio
+    ```
+
+2. Install dependencies:
+
+    ```bash
+    npm install
+    ```
+
+3. Run the development server:
+
+    ```bash
+    npm run dev
+    ```
+
+4. Open your browser and go to `http://localhost:3000` to view the project.
+
+## Scripts
+
+- `npm run dev`: Start the development server.
+- `npm run build`: Build the project for production.
+- `npm run preview`: Preview the production build.
+- `npm run lint`: Run ESLint for code quality checks.
+- `npm run format`: Format the code using Prettier.
+
