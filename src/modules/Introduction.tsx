@@ -8,7 +8,7 @@ function Introduction() {
       <div className='row h-100'>
         <div className='col-md-12'>
           <div className='row'>
-            <h1 className='font-weight-bold' style={{ color: '#D39B44', fontSize: '70px', paddingTop: '5px' }}>
+            <h1 className='font-weight-bold' style={{ color: '#D39B44', fontSize: '450%', paddingTop: '5px', textAlign: 'center' }}>
               PORTFOLIO
             </h1>
           </div>
