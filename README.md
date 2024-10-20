@@ -47,3 +47,7 @@ This is my personal portfolio website, designed to showcase my skills and projec
 - `npm run lint`: Run ESLint for code quality checks.
 - `npm run format`: Format the code using Prettier.
 
+## Plugin Docs
+- **Page Flip**: https://nodlik.github.io/react-pageflip/
+- **Hamburger**: https://github.com/negomi/react-burger-menu/
+
