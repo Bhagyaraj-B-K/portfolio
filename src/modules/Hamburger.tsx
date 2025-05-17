@@ -8,6 +8,7 @@ import { MdMenuBook, MdTableRestaurant } from 'react-icons/md'
 import { PageFlip } from './Booklet'
 import { bio } from '../constants'
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import { TbFileCv } from 'react-icons/tb'
 
 interface HamburgerProps {
   bg: number
@@ -86,16 +87,19 @@ function Hamburger(props: HamburgerProps) {
       />
       <Collapsible title='Contents' icon={<MdMenuBook />} classNames='contents-hb-menu' content={<ListGroup items={contents} />} />
       <div className='my-socials'>
-        <a href={bio.user.github} target='_blank' rel='noopener noreferrer' className='text-light mx-2'>
+        <a href={bio.user.github} target='_blank' rel='noopener noreferrer' className='text-light mx-2' title="Github">
           <FaGithub size={18} />
         </a>
-        <a href={bio.user.linkedIn} target='_blank' rel='noopener noreferrer' className='text-light mx-2'>
+        <a href='/resume/Bhagyaraj-BK-CV.pdf' target='_blank' rel='noopener noreferrer' className='text-light mx-2' title="Download CV">
+          <TbFileCv size={18} />
+        </a>
+        <a href={bio.user.linkedIn} target='_blank' rel='noopener noreferrer' className='text-light mx-2' title="LinkedIn">
           <FaLinkedin size={18} />
         </a>
-        <a href={bio.user.instagram} target='_blank' rel='noopener noreferrer' className='text-light mx-2'>
+        <a href={bio.user.instagram} target='_blank' rel='noopener noreferrer' className='text-light mx-2' title="Instagram">
           <FaInstagram size={18} />
         </a>
-        <a href={bio.user.facebook} target='_blank' rel='noopener noreferrer' className='text-light mx-2'>
+        <a href={bio.user.facebook} target='_blank' rel='noopener noreferrer' className='text-light mx-2' title="Facebook">
           <FaFacebook size={18} />
         </a>
       </div>
