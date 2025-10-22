@@ -5,13 +5,24 @@
 }
 
 .magazine-ending {
-  background: url('/profile/magazineEnd.jpg');
+  /* Modern browsers - AVIF */
+  background-image: url('/profile/magazineEnd.avif');
+  /* Fallback to WebP */
+  @supports not (background-image: url('/profile/magazineEnd.avif')) {
+    background-image: url('/profile/magazineEnd.webp');
+  }
+  /* Fallback to JPG */
+  @supports not ((background-image: url('/profile/magazineEnd.avif')) or (background-image: url('/profile/magazineEnd.webp'))) {
+    background-image: url('/profile/magazineEnd.optimized.jpg');
+  }
   background-size: cover;
   height: 100%;
   width: 100%;
-  filter:grayscale();
+  filter: grayscale();
   opacity: 50%;
   font-family: 'Javacom', 'Lucida Handwriting', cursive;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 .magazine-ending .center-piece {

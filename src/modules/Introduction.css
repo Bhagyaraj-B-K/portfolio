@@ -1,6 +1,17 @@
 .magazine-cover {
-  background: url('/profile/magazineCover.jpg');
+  /* Modern browsers - AVIF */
+  background-image: url('/profile/magazineCover.avif');
+  /* Fallback to WebP */
+  @supports not (background-image: url('/profile/magazineCover.avif')) {
+    background-image: url('/profile/magazineCover.webp');
+  }
+  /* Fallback to JPG */
+  @supports not ((background-image: url('/profile/magazineCover.avif')) or (background-image: url('/profile/magazineCover.webp'))) {
+    background-image: url('/profile/magazineCover.optimized.jpg');
+  }
   background-size: cover;
+  will-change: transform; /* Helps with performance */
+  transform: translateZ(0); /* Forces GPU acceleration */
 }
 
 .split-col {
