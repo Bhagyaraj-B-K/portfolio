@@ -8,7 +8,7 @@ import { MdMenuBook, MdTableRestaurant } from 'react-icons/md'
 import { PageFlip } from './Booklet'
 import { bio } from '../constants'
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
-import { TbFileCv } from 'react-icons/tb'
+import { TbFileCv, TbFileTypeDocx, TbFileTypePdf } from 'react-icons/tb'
 
 interface HamburgerProps {
   bg: number
@@ -18,9 +18,16 @@ interface HamburgerProps {
 
 function Hamburger(props: HamburgerProps) {
   const [isOpen, setOpen] = useState(false)
+  const [showResumeOptions, setShowResumeOptions] = useState(false)
 
   const toggleOpen = () => {
+    if (isOpen) setShowResumeOptions(false)
     setOpen(!isOpen)
+  }
+
+  const toggleResumeOptions = (e: React.MouseEvent) => {
+    e.preventDefault()
+    setShowResumeOptions(!showResumeOptions)
   }
 
   const bgOptions = [
@@ -87,19 +94,31 @@ function Hamburger(props: HamburgerProps) {
       />
       <Collapsible title='Contents' icon={<MdMenuBook />} classNames='contents-hb-menu' content={<ListGroup items={contents} />} />
       <div className='my-socials'>
-        <a href={bio.user.github} target='_blank' rel='noopener noreferrer' className='text-light mx-2' title="Github">
+        <a href={bio.user.github} target='_blank' rel='noopener noreferrer' className='text-light mx-2' title='Github'>
           <FaGithub size={18} />
         </a>
-        <a href='/resume/Bhagyaraj-BK-CV.pdf' target='_blank' rel='noopener noreferrer' className='text-light mx-2' title="Download CV">
-          <TbFileCv size={18} />
-        </a>
-        <a href={bio.user.linkedIn} target='_blank' rel='noopener noreferrer' className='text-light mx-2' title="LinkedIn">
+        <div className='resume-dropdown'>
+          <a href='#' onClick={toggleResumeOptions} className='text-light mx-2' title='Download CV'>
+            <TbFileCv size={18} />
+          </a>
+          <div className='resume-options' hidden={!showResumeOptions}>
+            <a href='/resume/Bhagyaraj BK CV.pdf' target='_blank' rel='noopener noreferrer' className='resume-option'>
+              <TbFileTypePdf size={15} />
+              &nbsp; PDF
+            </a>
+            <a href='/resume/Bhagyaraj BK CV.docx' target='_blank' rel='noopener noreferrer' className='resume-option'>
+              <TbFileTypeDocx size={15} />
+              &nbsp; Docx
+            </a>
+          </div>
+        </div>
+        <a href={bio.user.linkedIn} target='_blank' rel='noopener noreferrer' className='text-light mx-2' title='LinkedIn'>
           <FaLinkedin size={18} />
         </a>
-        <a href={bio.user.instagram} target='_blank' rel='noopener noreferrer' className='text-light mx-2' title="Instagram">
+        <a href={bio.user.instagram} target='_blank' rel='noopener noreferrer' className='text-light mx-2' title='Instagram'>
           <FaInstagram size={18} />
         </a>
-        <a href={bio.user.facebook} target='_blank' rel='noopener noreferrer' className='text-light mx-2' title="Facebook">
+        <a href={bio.user.facebook} target='_blank' rel='noopener noreferrer' className='text-light mx-2' title='Facebook'>
           <FaFacebook size={18} />
         </a>
       </div>
