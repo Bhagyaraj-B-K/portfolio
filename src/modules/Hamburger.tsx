@@ -102,11 +102,11 @@ function Hamburger(props: HamburgerProps) {
             <TbFileCv size={18} />
           </a>
           <div className='resume-options' hidden={!showResumeOptions}>
-            <a href='/resume/Bhagyaraj BK CV.pdf' target='_blank' rel='noopener noreferrer' className='resume-option'>
+            <a href='/resume/Bhagyaraj-BK-CV.pdf' target='_blank' rel='noopener noreferrer' className='resume-option'>
               <TbFileTypePdf size={15} />
               &nbsp; PDF
             </a>
-            <a href='/resume/Bhagyaraj BK CV.docx' target='_blank' rel='noopener noreferrer' className='resume-option'>
+            <a href='/resume/Bhagyaraj-BK-CV.docx' target='_blank' rel='noopener noreferrer' className='resume-option'>
               <TbFileTypeDocx size={15} />
               &nbsp; Docx
             </a>
